@@ -18,14 +18,14 @@ test('tests for name, id, and email', () => {
   expect(employee.ID).toBe('1');
   expect(employee.email).toBe('reiner@gmail.com');
   
-})
+});
 
 //test to see if Employee parent class is generating
 test('tests for Employee class', () => {
   const employee = new Employee(testEmployee);
 
   expect(typeof(employee)).toBe('object');
-})
+});
 
 //tests for getName() method
 test('tests for getName() method', () => {
@@ -33,7 +33,7 @@ test('tests for getName() method', () => {
   const employee = new Employee('Reiner');
 
   expect(employee.getName()).toBe('Reiner');
-})
+});
 
 //test for getId() method
 test('test for getId() method', () => {
@@ -41,7 +41,7 @@ test('test for getId() method', () => {
   const employee = new Employee('Reiner', ID);
 
   expect(employee.getId()).toBe('1');
-}) 
+}); 
 
 //test for getEmail() method
 test('test for getEmail() method', () => {
@@ -49,7 +49,7 @@ test('test for getEmail() method', () => {
   const employee = new Employee('Reiner', '1', email);
 
   expect(employee.getEmail()).toBe('reiner@gmail.com');
-})
+});
 
 //test for getRole() method
 test('test for getRole() method', () => {
@@ -57,4 +57,4 @@ test('test for getRole() method', () => {
   const employee = new Employee('Reiner', '1', 'reiner@gmail.com', role);
 
   expect(employee.getRole()).toBe('Employee');
-})
+});
